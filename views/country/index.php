@@ -11,5 +11,7 @@ use yii\widgets\LinkPager;
             </li>
         <?php endforeach; ?>
     </ul>
+    The controller ID is: <?= $this->context->id ?>
+
 
 <?= LinkPager::widget(['pagination' => $pagination]) ?>
