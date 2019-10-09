@@ -15,3 +15,5 @@ use yii\widgets\LinkPager;
 
 
 <?= LinkPager::widget(['pagination' => $pagination]) ?>
+
+<?= \app\components\HelloWidget::widget(['message'=>'Hello, Good Morning!!']);
