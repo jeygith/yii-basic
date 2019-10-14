@@ -19,6 +19,9 @@ use yii\widgets\LinkPager;
   <p>
       server port <?= Yii::$app->request->serverPort; ?>
   </p>
+    <p>
+        userIP<?= Yii::$app->request->userIP; ?>
+    </p>
 
 <?= LinkPager::widget(['pagination' => $pagination]) ?>
 
