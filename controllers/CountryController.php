@@ -7,6 +7,7 @@ namespace app\controllers;
 use app\models\Country;
 use yii\data\Pagination;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 
 
 class CountryController extends Controller
@@ -24,6 +25,8 @@ class CountryController extends Controller
             ->offset($pagination->offset)
             ->limit($pagination->limit)
             ->all();
+
+       // throw new NotFoundHttpException;
 
 
         return $this->render('index', [
