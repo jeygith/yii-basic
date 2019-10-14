@@ -1,6 +1,8 @@
 <?php
+
 use yii\helpers\Html;
 use yii\widgets\LinkPager;
+
 ?>
     <h1>Countries</h1>
     <ul>
@@ -14,6 +16,10 @@ use yii\widgets\LinkPager;
     The controller ID is: <?= $this->context->id ?>
 
 
+  <p>
+      server port <?= Yii::$app->request->serverPort; ?>
+  </p>
+
 <?= LinkPager::widget(['pagination' => $pagination]) ?>
 
-<?= \app\components\HelloWidget::widget(['message'=>'Hello, Good Morning!!']);
+<?= \app\components\HelloWidget::widget(['message' => 'Hello, Good Morning!!']);
